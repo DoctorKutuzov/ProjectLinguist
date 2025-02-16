@@ -1,0 +1,42 @@
+@startuml
+!include <C4/C4_Container>
+title HLD Диаграмма проекта
+
+Person(user, "Лингвист", "Проводит анализ звукозаписи")
+System_Boundary(c1, "Клиент") {
+  Container(webapp, "SPA", "React.js", "Отображает интерфейс и отправляет запросы на API")
+}
+
+System_Boundary(s1, "Сервер") {
+  Container(api, "API-gateway", "FastAPI", "Обрабатывает запросы от клиентского приложения и ставит задачи в очередь")
+  ContainerQueue(messagebus, "Message Bus", "RabbitMQ", "Очередь задач")
+  Container(repo, "Repository", "SQLAlchemy", "Обрабатывает запросы к БД")
+  ContainerDb(db, "Database", "PostgreSQL", "Хранит результаты работы всех сервисов")
+  Container(freqs, "Frequencies", "Python", "Определяет частоты звукозаписи")
+  Container(inton, "Intonation Contour", "Python", "Определяет интонационный контур")
+  Container(syntags, "Syntagmas", "Python", "Делит текст на синтагмы")
+  Container(nn, "Markers", "PyTorch", "Размечает интонационные маркеры у звукозаписи")
+  Container(connector, "Connector", "Python", "Взаимодействует с сервисами транскрибации")
+  Container(s3, "Storage", "MinIO", "Хранит звукозаписи")
+}
+
+System_Ext(yandex, "Yandex SpeechKit", "Сервис для перевода речи в текст")
+
+Rel(user, webapp, "Отправка запросов", "HTTPS")
+Rel(webapp, api, "Запросы на обработку", "REST API")
+Rel(api, messagebus, "Постановка задач в очередь", "AMQP")
+Rel(api, s3, "Сохранение звукозаписи", "HTTP")
+Rel(messagebus, freqs, "Задача на определение частот звукозаписи", "AMQP")
+Rel(messagebus, inton, "Задача на определение интонационного профиля звукозаписи", "AMQP")
+Rel(messagebus, syntags, "Задача на деление текста на синтагмы", "AMQP")
+Rel(messagebus, nn, "Задача на разметку интонационных маркеров звукозаписи", "AMQP")
+Rel(messagebus, connector, "Задача на транскрибацию звукозаписи", "AMQP")
+Rel(messagebus, repo, "Задача на работу с БД", "AMQP")
+Rel(repo, db, "Запись/Чтение", "SQL")
+Rel(connector, yandex, "Отправка звукозаписи на транскрибацию", "HTTPS")
+Rel(s3, freqs, "Определение частот звукозаписи", "HTTP")
+Rel(s3, inton, "Определение интонационного профиля звукозаписи", "HTTP")
+Rel(s3, nn, "Разметка интонационных маркеров звукозаписи", "HTTP")
+Rel(s3, connector, "Пересылка звукозаписи", "AMQP")
+
+@enduml

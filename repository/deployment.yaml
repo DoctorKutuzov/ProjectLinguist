@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repository
+  namespace: linguist-system-backend
+  labels:
+    app: repository
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: repository
+  template:
+    metadata:
+      labels:
+        app: repository
+    spec:
+      containers:
+        - name: repository-container
+          image: repository
+          env:
+            - name: RABBITMQ_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_user
+            - name: RABBITMQ_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_password
+            - name: RABBITMQ_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_host
+            - name: RABBITMQ_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_port
+            - name: PSQL_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: psql_user
+            - name: PSQL_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: psql_password
+            - name: PSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: psql_host
+            - name: PSQL_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: psql_port
+          resources:
+            limits:
+              memory: 200Mi
+              cpu: 1
+            requests:
+              memory: 100Mi
+              cpu: 1
+          ports:
+            - containerPort: 8072
+      imagePullSecrets:
+        - name: reg-sample

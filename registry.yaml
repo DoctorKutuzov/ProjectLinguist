@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: reg-sample
+data:
+  .dockerconfigjson: <set-your-encoded-value>
+type: kubernetes.io/dockerconfigjson

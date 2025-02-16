@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-spa-deployment
+  namespace: linguist-system-frontend
+  labels: react-spa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-spa
+  template:
+    metadata:
+      labels:
+        app: react-spa
+    spec:
+      containers:
+        - name: react-spa-container
+          image: react-spa
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: reg-sample

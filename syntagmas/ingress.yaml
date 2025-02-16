@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: syntagmas
+  namespace: linguist-system-backend
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: api.linguist.ru
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: syntagmas
+                port:
+                  number: 8078
+  tls:
+    - hosts:
+        - api.linguist.ru
+      secretName: linguist.ru

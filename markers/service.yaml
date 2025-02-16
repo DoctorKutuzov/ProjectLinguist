@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: markers
+  namespace: linguist-system-backend
+  labels:
+    app: markers
+spec:
+  selector:
+    app: markers
+  ports:
+    - protocol: TCP
+      port: 0866
+      targetPort: 8066

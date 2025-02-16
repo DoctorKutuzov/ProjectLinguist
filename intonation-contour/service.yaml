@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: intonation-contour
+  namespace: linguist-system-backend
+  labels:
+    app: intonation-contour
+spec:
+  selector:
+    app: intonation-contour
+  ports:
+    - protocol: TCP
+      port: 8076
+      targetPort: 8076

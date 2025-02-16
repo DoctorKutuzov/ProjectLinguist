@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1470px" preserveAspectRatio="none" style="width:1952px;height:1470px;background:#FFFFFF;" version="1.1" viewBox="0 0 1952 1470" width="1952px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="206" x="866.25" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="196" x="871.25" y="22.9951">HLD Диаграмма проекта</text><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><g id="cluster_c1"><rect fill="none" height="192" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="252" x="669" y="268.2969"/><text fill="#444444" font-family="sans-serif" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="38" x="776" y="275.8662">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="67" x="761.5" y="295.1484">Клиент</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="764" y="310.0605">[System]</text></g><!--MD5=[c26638a81821cf585a88e29a60357529]
+cluster s1--><g id="cluster_s1"><rect fill="none" height="929" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="1737" x="7" y="535.2969"/><text fill="#444444" font-family="sans-serif" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="38" x="856.5" y="542.8662">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="66" x="842.5" y="562.1484">Сервер</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="844.5" y="577.0605">[System]</text></g><!--MD5=[2021705b656b270ae1616113380bc97f]
+entity webapp--><g id="elem_webapp"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="219" x="685.5" y="329.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="758" y="350.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="35" x="777.5" y="368.1172">SPA</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="60" x="765" y="383.0293">[React.js]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="793" y="398.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="699.5" y="415.1514">Отображает интерфейс и</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="695.5" y="431.4482">отправляет запросы на API</text></g><!--MD5=[e2307af040e3f87d22824e7603ca28ec]
+entity api--><g id="elem_api"><rect fill="#438DD5" height="131.75" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="220" x="685" y="596.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="758" y="617.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="112" x="739" y="635.1172">API-gateway</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="56" x="767" y="650.0293">[FastAPI]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="793" y="665.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="699" y="682.1514">Обрабатывает запросы от</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="697.5" y="698.4482">клиентского приложения</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="696.5" y="714.7451">и ставит задачи в очередь</text></g><!--MD5=[8c8905d63503ee496b1e744969acf436]
+entity messagebus--><g id="elem_messagebus"><path d="M559,836.2969 L687,836.2969 C692,836.2969 692,880.875 692,880.875 C692,880.875 692,925.4531 687,925.4531 L559,925.4531 C554,925.4531 554,880.875 554,880.875 C554,880.875 554,836.2969 559,836.2969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M687,836.2969 C682,836.2969 682,880.875 682,880.875 C682,925.4531 687,925.4531 687,925.4531 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="581" y="852.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="118" x="559" y="870.1172">Message Bus</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="69" x="583.5" y="885.0293">[RabbitMQ]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="616" y="900.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="565" y="917.1514">Очередь задач</text></g><!--MD5=[ae38f3df50bbf8acf027574e6a8bac37]
+entity repo--><g id="elem_repo"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="214" x="23" y="1083.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="93" y="1104.9355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="96" x="82" y="1122.6172">Repository</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="84" x="88" y="1137.5293">[SQLAlchemy]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="128" y="1153.3545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="37" y="1169.6514">Обрабатывает запросы к</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="119" y="1185.9482">БД</text></g><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><g id="elem_db"><path d="M38.5,1334.2969 C38.5,1324.2969 130,1324.2969 130,1324.2969 C130,1324.2969 221.5,1324.2969 221.5,1334.2969 L221.5,1438.75 C221.5,1448.75 130,1448.75 130,1448.75 C130,1448.75 38.5,1448.75 38.5,1438.75 L38.5,1334.2969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M38.5,1334.2969 C38.5,1344.2969 130,1344.2969 130,1344.2969 C130,1344.2969 221.5,1344.2969 221.5,1334.2969 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="93" y="1359.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="83" x="88.5" y="1377.1172">Database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="89" y="1392.0293">[PostgreSQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="128" y="1407.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="58" y="1424.1514">Хранит результаты</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="48.5" y="1440.4482">работы всех сервисов</text></g><!--MD5=[311a15c4057ae8f2e95dcd72bf63fc8a]
+entity freqs--><g id="elem_freqs"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="186" x="1278" y="1083.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="1334" y="1104.9355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="108" x="1317" y="1122.6172">Frequencies</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="1344.5" y="1137.5293">[Python]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1369" y="1153.3545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="1292" y="1169.6514">Определяет частоты</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="1325.5" y="1185.9482">звукозаписи</text></g><!--MD5=[e19621dd6a8270d35de1bc3e553d2503]
+entity inton--><g id="elem_inton"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="194" x="1504" y="1083.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="1564" y="1104.9355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="169" x="1516.5" y="1122.6172">Intonation Contour</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="1574.5" y="1137.5293">[Python]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1599" y="1153.3545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1555" y="1169.6514">Определяет</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="1514" y="1185.9482">интонационный контур</text></g><!--MD5=[02aac7088b6a4fbe4dbe9c2f463103a3]
+entity syntags--><g id="elem_syntags"><rect fill="#438DD5" height="99.1563" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="215" x="272.5" y="1091.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="343" y="1112.9355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="331.5" y="1130.6172">Syntagmas</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="353.5" y="1145.5293">[Python]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="378" y="1161.3545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="286.5" y="1177.6514">Делит текст на синтагмы</text></g><!--MD5=[defbd921a4842d1508ad36753a2e7750]
+entity nn--><g id="elem_nn"><rect fill="#438DD5" height="131.75" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="218" x="597" y="1075.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="669" y="1096.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="74" x="669" y="1114.1172">Markers</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="676.5" y="1129.0293">[PyTorch]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="704" y="1144.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="667" y="1161.1514">Размечает</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="607" y="1177.4482">интонационные маркеры у</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="660.5" y="1193.7451">звукозаписи</text></g><!--MD5=[1d18ee9a77ed575905bda72caac43f28]
+entity connector--><g id="elem_connector"><rect fill="#438DD5" height="115.4531" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="216" x="1017" y="1083.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="1088" y="1104.9355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="93" x="1078.5" y="1122.6172">Connector</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="1098.5" y="1137.5293">[Python]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1123" y="1153.3545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="1053" y="1169.6514">Взаимодействует с</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="1027" y="1185.9482">сервисами транскрибации</text></g><!--MD5=[b165ca7cce796f881c879adda4a6bef9]
+entity s3--><g id="elem_s3"><rect fill="#438DD5" height="99.1563" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="172" x="1039" y="831.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="74" x="1088" y="852.4355">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="70" x="1090" y="870.1172">Storage</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="1103.5" y="885.0293">[MinIO]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1123" y="900.8545"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="1053" y="917.1514">Хранит звукозаписи</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><rect fill="#08427B" height="149.4844" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="156" x="717" y="44.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="766" y="65.4355">«person»</text><image height="48" width="48" x="771" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="68.2656"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="83" x="753.5" y="131.1172">Лингвист</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="793" y="147.8857"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="731" y="164.1826">Проводит анализ</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="749.5" y="180.4795">звукозаписи</text></g><!--MD5=[1ff1910c89f9474aad959eb0b3b0c46e]
+entity yandex--><g id="elem_yandex"><rect fill="#999999" height="101.4844" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="187" x="1759.5" y="1335.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="115" x="1795.5" y="1356.9355">«external_system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="159" x="1773.5" y="1374.6172">Yandex SpeechKit</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1851" y="1391.3857"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1773.5" y="1407.6826">Сервис для перевода</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1806" y="1423.9795">речи в текст</text></g><!--MD5=[0123b6afeddc1cc871df4d3c0521a244]
+link user to webapp--><g id="link_user_webapp"><path d="M795,193.5369 C795,233.5869 795,282.6469 795,321.1869 " fill="none" id="user-to-webapp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="795,329.2369,798,321.2369,792,321.2369,795,329.2369" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="139" x="796" y="235.4355">Отправка запросов</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="841" y="249.4043">[HTTPS]</text></g><!--MD5=[1605a2a6ba32452067a763d7b455190c]
+link webapp to api--><g id="link_webapp_api"><path d="M795,444.4669 C795,486.0069 795,542.7569 795,587.7869 " fill="none" id="webapp-to-api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="795,596.0569,798,588.0569,792,588.0569,795,596.0569" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="83" x="796" y="488.4355">Запросы на</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="75" x="802" y="502.4043">обработку</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="64" x="807.5" y="516.373">[REST API]</text></g><!--MD5=[72f9e3143aecee83a1c2bb8c0cbebcde]
+link api to messagebus--><g id="link_api_messagebus"><path d="M743.16,728.5469 C717.3,761.0969 686.53,799.8369 662.6,829.9569 " fill="none" id="api-to-messagebus" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="657.6,836.2469,664.9206,831.8413,660.2187,828.1141,657.6,836.2469" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="143" x="720" y="770.4355">Постановка задач в</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="762.5" y="784.4043">очередь</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="771" y="798.373">[AMQP]</text></g><!--MD5=[da012591248044a807f1ee2d6a751e92]
+link api to s3--><g id="link_api_s3"><path d="M894.46,728.5469 C942.29,759.9269 998.91,797.0669 1044.06,826.6969 " fill="none" id="api-to-s3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1050.92,831.1969,1045.8866,824.2929,1042.5881,829.3049,1050.92,831.1969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="85" x="1000" y="770.4355">Сохранение</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="1001" y="784.4043">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="1024" y="798.373">[HTTP]</text></g><!--MD5=[2c67e83eaf9af9232937a3eae5133527]
+link messagebus to freqs--><g id="link_messagebus_freqs"><path d="M692.2,889.6669 C750.59,898.9869 834.29,918.8369 896,960.2969 C935.93,987.1269 920.87,1022.0869 963,1045.2969 C1075.72,1107.3969 1128.06,1037.2569 1251,1075.2969 C1257.43,1077.2869 1263.9,1079.6369 1270.34,1082.2369 " fill="none" id="messagebus-to-freqs" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1277.87,1085.3969,1271.6585,1079.5302,1269.3326,1085.061,1277.87,1085.3969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="75" x="998.5" y="986.4355">Задача на</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="148" x="964" y="1000.4043">определение частот</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="994.5" y="1014.373">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="1015.5" y="1028.3418">[AMQP]</text></g><!--MD5=[0f27437104c9e01164ac7333fac6eb06]
+link messagebus to inton--><g id="link_messagebus_inton"><path d="M692.11,890.0269 C846.11,908.4769 1204.81,952.1969 1215,960.2969 C1246.61,985.4069 1215.33,1020.2669 1247,1045.2969 C1329.61,1110.5869 1381.84,1042.8269 1482,1075.2969 C1486.85,1076.8669 1491.73,1078.6369 1496.6,1080.5669 " fill="none" id="messagebus-to-inton" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1504.24,1083.7069,1497.982,1077.8899,1495.7002,1083.4391,1504.24,1083.7069" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="75" x="1268" y="972.4355">Задача на</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="97" x="1257" y="986.4043">определение</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="115" x="1248" y="1000.373">интонационного</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="63" x="1274" y="1014.3418">профиля</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="1264" y="1028.3105">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="1285" y="1042.2793">[AMQP]</text></g><!--MD5=[892408a21e1c4d0fdbb906fc9eb120af]
+link messagebus to syntags--><g id="link_messagebus_syntags"><path d="M553.72,886.4869 C457.95,894.5869 292.72,914.8869 256,960.2969 C232.24,989.6669 239.28,1011.4169 256,1045.2969 C263.65,1060.7969 275.18,1074.4669 288.18,1086.2569 " fill="none" id="messagebus-to-syntags" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="294.25,1091.5469,290.1821,1084.0334,286.2448,1088.5608,294.25,1091.5469" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="141" x="257" y="993.4355">Задача на деление</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="138" x="260.5" y="1007.4043">текста на синтагмы</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="307" y="1021.373">[AMQP]</text></g><!--MD5=[7391e57b75955e1e0a62da84bdaec03f]
+link messagebus to nn--><g id="link_messagebus_nn"><path d="M553.91,890.0569 C509.86,899.2969 455.98,918.8669 428,960.2969 C406.86,991.6069 406.03,1014.5669 428,1045.2969 C430.61,1048.9469 514.29,1077.2669 589.16,1102.0469 " fill="none" id="messagebus-to-nn" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="596.84,1104.5869,590.1871,1099.226,588.3026,1104.9224,596.84,1104.5869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="146" x="429" y="979.4355">Задача на разметку</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="109" x="447.5" y="993.4043">интонационных</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="71" x="466.5" y="1007.373">маркеров</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="460.5" y="1021.3418">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="481.5" y="1035.3105">[AMQP]</text></g><!--MD5=[254aca7784b428b3c09084bba222db03]
+link messagebus to connector--><g id="link_messagebus_connector"><path d="M606.59,925.4269 C595.98,961.8769 588.83,1012.9469 617,1045.2969 C648.82,1081.8469 785.31,1066.6869 833,1075.2969 C891.34,1085.8269 955.7,1099.8869 1009.12,1112.2369 " fill="none" id="messagebus-to-connector" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1016.92,1114.0469,1009.7994,1109.3248,1008.4503,1115.1712,1016.92,1114.0469" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="75" x="636" y="986.4355">Задача на</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="111" x="618" y="1000.4043">транскрибацию</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="632" y="1014.373">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="653" y="1028.3418">[AMQP]</text></g><!--MD5=[ad72c5d7a9f16aa9611a131903caf805]
+link messagebus to repo--><g id="link_messagebus_repo"><path d="M553.77,881.2169 C422.62,881.7469 145.69,891.2469 86,960.2969 C58.49,992.1269 70.57,1038.4069 88.97,1076.0769 " fill="none" id="messagebus-to-repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="92.72,1083.4869,91.7849,1074.9942,86.4312,1077.7031,92.72,1083.4869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="140" x="87" y="993.4355">Задача на работу с</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="20" x="149" y="1007.4043">БД</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="136.5" y="1021.373">[AMQP]</text></g><!--MD5=[be5ce90a436fa914b8cf9f362ef5551b]
+link repo to db--><g id="link_repo_db"><path d="M130,1198.9669 C130,1233.9069 130,1278.9669 130,1316.0169 " fill="none" id="repo-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="130,1324.2869,133,1316.2869,127,1316.2869,130,1324.2869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="131" y="1263.4355">Запись/Чтение</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="33" x="166.5" y="1277.4043">[SQL]</text></g><!--MD5=[62d16b2b561fe74ed4ba9edc79bfc6eb]
+link connector to yandex--><g id="link_connector_yandex"><path d="M1233.27,1196.4869 C1242.55,1200.3869 1251.88,1204.0469 1261,1207.2969 C1469.1,1281.3169 1538.39,1243.6169 1744,1324.2969 C1749.96,1326.6369 1756,1329.2469 1762.01,1332.0369 " fill="none" id="connector-to-yandex" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1769.61,1335.6569,1763.6774,1329.5084,1761.0974,1334.9253,1769.61,1335.6569" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="69" x="1674.5" y="1249.4355">Отправка</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="108" x="1655" y="1263.4043">звукозаписи на</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="111" x="1655.5" y="1277.373">транскрибацию</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="49" x="1686.5" y="1291.3418">[HTTPS]</text></g><!--MD5=[ee07a2334423f2f9dc189d9b231776c3]
+link s3 to freqs--><g id="link_s3_freqs"><path d="M1211.12,883.9869 C1267.9,890.4769 1338.48,909.2569 1376,960.2969 C1399.84,992.7269 1398.43,1038.0769 1391.15,1075.1369 " fill="none" id="s3-to-freqs" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1389.4,1083.3969,1393.9944,1076.1933,1388.1249,1074.9486,1389.4,1083.3969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="150" x="1396" y="993.4355">Определение частот</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="1427.5" y="1007.4043">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="1450.5" y="1021.373">[HTTP]</text></g><!--MD5=[f82a7fc2a7f48cfee4a2efa419b2bdee]
+link s3 to inton--><g id="link_s3_inton"><path d="M1211.37,886.7269 C1322.29,894.8369 1506.3,914.8769 1555,960.2969 C1586.27,989.4569 1597.49,1036.6869 1601.04,1075.4569 " fill="none" id="s3-to-inton" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1601.68,1083.5869,1604.0272,1075.3716,1598.0466,1075.8539,1601.68,1083.5869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="99" x="1605" y="979.4355">Определение</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="115" x="1597" y="993.4043">интонационного</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="63" x="1623" y="1007.373">профиля</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="1613" y="1021.3418">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="1636" y="1035.3105">[HTTP]</text></g><!--MD5=[011d891138a6d0aa4493d5c3afc16be7]
+link s3 to nn--><g id="link_s3_nn"><path d="M1038.64,891.9569 C948.75,904.1169 815.74,927.0969 777,960.2969 C772.47,964.1769 751.08,1019.2469 732.95,1067.4569 " fill="none" id="s3-to-nn" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="730.07,1075.1269,735.6934,1068.6943,730.0771,1066.5829,730.07,1075.1269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="68" x="798.5" y="979.4355">Разметка</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="109" x="778" y="993.4043">интонационных</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="71" x="797" y="1007.373">маркеров</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="791" y="1021.3418">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="814" y="1035.3105">[HTTP]</text></g><!--MD5=[55e7644212aea7a715a8167eaae686da]
+link s3 to connector--><g id="link_s3_connector"><path d="M1122.85,930.3669 C1122.5,940.2669 1122.18,950.6169 1122,960.2969 C1121.28,998.0669 1121.4,1007.5269 1122,1045.2969 C1122.16,1055.1269 1122.4,1065.5269 1122.69,1075.6969 " fill="none" id="s3-to-connector" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1122.92,1083.7869,1125.6903,1075.7045,1119.6927,1075.8758,1122.92,1083.7869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="81" x="1124" y="993.4355">Пересылка</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="87" x="1123" y="1007.4043">звукозаписи</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="45" x="1144" y="1021.373">[AMQP]</text></g><!--MD5=[f4fd309b73e4b5fe790b55521906353a]
+@startuml
+!include <C4/C4_Container>
+title HLD Диаграмма проекта
+
+Person(user, "Лингвист", "Проводит анализ звукозаписи")
+System_Boundary(c1, "Клиент") {
+  Container(webapp, "SPA", "React.js", "Отображает интерфейс и отправляет запросы на API")
+}
+
+System_Boundary(s1, "Сервер") {
+  Container(api, "API-gateway", "FastAPI", "Обрабатывает запросы от клиентского приложения и ставит задачи в очередь")
+  ContainerQueue(messagebus, "Message Bus", "RabbitMQ", "Очередь задач")
+  Container(repo, "Repository", "SQLAlchemy", "Обрабатывает запросы к БД")
+  ContainerDb(db, "Database", "PostgreSQL", "Хранит результаты работы всех сервисов")
+  Container(freqs, "Frequencies", "Python", "Определяет частоты звукозаписи")
+  Container(inton, "Intonation Contour", "Python", "Определяет интонационный контур")
+  Container(syntags, "Syntagmas", "Python", "Делит текст на синтагмы")
+  Container(nn, "Markers", "PyTorch", "Размечает интонационные маркеры у звукозаписи")
+  Container(connector, "Connector", "Python", "Взаимодействует с сервисами транскрибации")
+  Container(s3, "Storage", "MinIO", "Хранит звукозаписи")
+}
+
+System_Ext(yandex, "Yandex SpeechKit", "Сервис для перевода речи в текст")
+
+Rel(user, webapp, "Отправка запросов", "HTTPS")
+Rel(webapp, api, "Запросы на обработку", "REST API")
+Rel(api, messagebus, "Постановка задач в очередь", "AMQP")
+Rel(api, s3, "Сохранение звукозаписи", "HTTP")
+Rel(messagebus, freqs, "Задача на определение частот звукозаписи", "AMQP")
+Rel(messagebus, inton, "Задача на определение интонационного профиля звукозаписи", "AMQP")
+Rel(messagebus, syntags, "Задача на деление текста на синтагмы", "AMQP")
+Rel(messagebus, nn, "Задача на разметку интонационных маркеров звукозаписи", "AMQP")
+Rel(messagebus, connector, "Задача на транскрибацию звукозаписи", "AMQP")
+Rel(messagebus, repo, "Задача на работу с БД", "AMQP")
+Rel(repo, db, "Запись/Чтение", "SQL")
+Rel(connector, yandex, "Отправка звукозаписи на транскрибацию", "HTTPS")
+Rel(s3, freqs, "Определение частот звукозаписи", "HTTP")
+Rel(s3, inton, "Определение интонационного профиля звукозаписи", "HTTP")
+Rel(s3, nn, "Разметка интонационных маркеров звукозаписи", "HTTP")
+Rel(s3, connector, "Пересылка звукозаписи", "AMQP")
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+title HLD Диаграмма проекта
+
+rectangle "<$person>\n==Лингвист\n\n Проводит анализ звукозаписи" <<person>> as user 
+rectangle "==Клиент\n<size:12>[System]</size>" <<boundary>> as c1  {
+  rectangle "==SPA\n//<size:12>[React.js]</size>//\n\n Отображает интерфейс и отправляет запросы на API" <<container>> as webapp 
+}
+
+rectangle "==Сервер\n<size:12>[System]</size>" <<boundary>> as s1  {
+  rectangle "==API-gateway\n//<size:12>[FastAPI]</size>//\n\n Обрабатывает запросы от клиентского приложения и ставит задачи в очередь" <<container>> as api 
+  queue "==Message Bus\n//<size:12>[RabbitMQ]</size>//\n\n Очередь задач" <<container>> as messagebus 
+  rectangle "==Repository\n//<size:12>[SQLAlchemy]</size>//\n\n Обрабатывает запросы к БД" <<container>> as repo 
+  database "==Database\n//<size:12>[PostgreSQL]</size>//\n\n Хранит результаты работы всех сервисов" <<container>> as db 
+  rectangle "==Frequencies\n//<size:12>[Python]</size>//\n\n Определяет частоты звукозаписи" <<container>> as freqs 
+  rectangle "==Intonation Contour\n//<size:12>[Python]</size>//\n\n Определяет интонационный контур" <<container>> as inton 
+  rectangle "==Syntagmas\n//<size:12>[Python]</size>//\n\n Делит текст на синтагмы" <<container>> as syntags 
+  rectangle "==Markers\n//<size:12>[PyTorch]</size>//\n\n Размечает интонационные маркеры у звукозаписи" <<container>> as nn 
+  rectangle "==Connector\n//<size:12>[Python]</size>//\n\n Взаимодействует с сервисами транскрибации" <<container>> as connector 
+  rectangle "==Storage\n//<size:12>[MinIO]</size>//\n\n Хранит звукозаписи" <<container>> as s3 
+}
+
+rectangle "==Yandex SpeechKit\n\n Сервис для перевода речи в текст" <<external_system>> as yandex 
+
+user - ->> webapp : **Отправка запросов**\n//<size:12>[HTTPS]</size>//
+webapp - ->> api : **Запросы на обработку**\n//<size:12>[REST API]</size>//
+api - ->> messagebus : **Постановка задач в очередь**\n//<size:12>[AMQP]</size>//
+api - ->> s3 : **Сохранение звукозаписи**\n//<size:12>[HTTP]</size>//
+messagebus - ->> freqs : **Задача на определение частот звукозаписи**\n//<size:12>[AMQP]</size>//
+messagebus - ->> inton : **Задача на определение интонационного профиля звукозаписи**\n//<size:12>[AMQP]</size>//
+messagebus - ->> syntags : **Задача на деление текста на синтагмы**\n//<size:12>[AMQP]</size>//
+messagebus - ->> nn : **Задача на разметку интонационных маркеров звукозаписи**\n//<size:12>[AMQP]</size>//
+messagebus - ->> connector : **Задача на транскрибацию звукозаписи**\n//<size:12>[AMQP]</size>//
+messagebus - ->> repo : **Задача на работу с БД**\n//<size:12>[AMQP]</size>//
+repo - ->> db : **Запись/Чтение**\n//<size:12>[SQL]</size>//
+connector - ->> yandex : **Отправка звукозаписи на транскрибацию**\n//<size:12>[HTTPS]</size>//
+s3 - ->> freqs : **Определение частот звукозаписи**\n//<size:12>[HTTP]</size>//
+s3 - ->> inton : **Определение интонационного профиля звукозаписи**\n//<size:12>[HTTP]</size>//
+s3 - ->> nn : **Разметка интонационных маркеров звукозаписи**\n//<size:12>[HTTP]</size>//
+s3 - ->> connector : **Пересылка звукозаписи**\n//<size:12>[AMQP]</size>//
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

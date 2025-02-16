@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: storage
+  namespace: linguist-system-backend
+  labels:
+    app: storage
+spec:
+  selector:
+    matchLabels:
+      app: storage
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: storage
+    spec:
+      volumes:
+      - name: storage
+        persistentVolumeClaim:
+          claimName: storage-pvc
+      containers:
+      - name: storage-container
+        image: minio/minio:latest
+        args:
+        - server
+        - /storage
+        env:
+          - name: MINIO_ACCESS_KEY
+            valueFrom:
+              configMapKeyRef:
+                name: linguist-config
+                key: minio_access_key
+          - name: MINIO_SECRET_KEY
+            valueFrom:
+              configMapKeyRef:
+                name: linguist-config
+                key: minio_secret_key
+        ports:
+        - containerPort: 9000
+        volumeMounts:
+        - name: storage
+          mountPath: "/storage"

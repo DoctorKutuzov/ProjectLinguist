@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: message-bus-pvc
+  namespace: linguist-system-backend
+spec:
+  storageClassName: "message-bus"
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 4Gi

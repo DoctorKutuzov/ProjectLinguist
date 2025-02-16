@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: message-bus-np
+  namespace: linguist-system-backend
+spec:
+  podSelector:
+    matchLabels:
+      app: message-bus
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: api-gateway
+    - podSelector:
+        matchLabels:
+          app: connector
+    - podSelector:
+        matchLabels:
+          app: frequences
+    - podSelector:
+        matchLabels:
+          app: intonation-contour
+    - podSelector:
+        matchLabels:
+          app: markers
+    - podSelector:
+        matchLabels:
+          app: repository
+    - podSelector:
+        matchLabels:
+          app: syntagmas
+  policyTypes:
+  - Ingress

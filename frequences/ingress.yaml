@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: frequences
+  namespace: linguist-system
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: api.linguist.ru
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frequences
+                port:
+                  number: 8074
+  tls:
+    - hosts:
+        - api.linguist.ru
+      secretName: linguist.ru

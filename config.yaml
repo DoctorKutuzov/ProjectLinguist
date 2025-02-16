@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: linguist-config
+  namespace: linguist-system-backend
+data:
+  jwt_secret_key: "jwt_secret_key"
+  jwt_algorithm: "jwt_algorithm"
+  rabbitmq_user: "rabbitmq_user"
+  rabbitmq_password: "rabbitmq_password"
+  rabbitmq_host: "rabbitmq_host"
+  rabbitmq_port: "rabbitmq_port"
+  psql_user: "psql_user"
+  psql_password: "psql_password"
+  psql_host: "psql_host"
+  psql_port: "psql_port"
+  minio_access_key: "minio_access_key"
+  minio_secret_key: "minio_secret_key"
+  minio_host: "minio_host"
+  minio_port: "minio_port"
+  yandex_api_token: "yandex_api_token"

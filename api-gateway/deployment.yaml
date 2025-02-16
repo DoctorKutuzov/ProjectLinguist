@@ -1,0 +1,82 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+  namespace: linguist-system-backend
+  labels:
+    app: api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-gateway
+  template:
+    metadata:
+      labels:
+        app: api-gateway
+    spec:
+      containers:
+        - name: api-gateway-container
+          image: api-gateway
+          env:
+            - name: JWT_SECRET_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: jwt_secret_key
+            - name: JWT_ALGORITHM
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: jwt_algorithm
+            - name: RABBITMQ_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_user
+            - name: RABBITMQ_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_password
+            - name: RABBITMQ_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_host
+            - name: RABBITMQ_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: rabbitmq_port
+            - name: MINIO_ACCESS_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: minio_access_key
+            - name: MINIO_SECRET_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: minio_secret_key
+            - name: MINIO_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: minio_host
+            - name: MINIO_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: linguist-config
+                  key: minio_port
+          resources:
+            limits:
+              memory: 2000Mi
+              cpu: 2
+            requests:
+              memory: 1000Mi
+              cpu: 1
+          ports:
+            - containerPort: 8070
+      imagePullSecrets:
+        - name: reg-sample
